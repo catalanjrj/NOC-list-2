@@ -40,7 +40,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="accessoryView" destination="d3P-M7-ByW" id="cnU-xh-z3Q"/>
-                                    <segue destination="HdS-1A-Clx" kind="show" id="eZ2-qR-lti"/>
+                                    <segue destination="HdS-1A-Clx" kind="show" identifier="Agent" id="eZ2-qR-lti"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -68,26 +68,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-pv-PLp">
-                                <rect key="frame" x="278" y="261" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-pv-PLp">
+                                <rect key="frame" x="273" y="290" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agent's Cover Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAE-kC-0my">
-                                <rect key="frame" x="16" y="85" width="157" height="21"/>
+                                <rect key="frame" x="8" y="77" width="157" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agent's Real Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUc-FS-ZAF">
-                                <rect key="frame" x="8" y="123" width="145" height="21"/>
+                                <rect key="frame" x="8" y="106" width="145" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nNy-pv-PLp" firstAttribute="centerX" secondItem="Ecq-na-HHh" secondAttribute="centerX" id="jH8-IU-cZc"/>
+                            <constraint firstItem="nNy-pv-PLp" firstAttribute="centerY" secondItem="Ecq-na-HHh" secondAttribute="centerY" id="pnf-jP-2ud"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="accessLevelLabel" destination="nNy-pv-PLp" id="56s-Mc-cdN"/>

@@ -56,15 +56,15 @@
         //     (hint: We did something similar to this in HW 1)
         //
         NSString *agentName = self.agent.coverName;
-        NSArray *arrayWithAgentName = [agentName componentsSeparatedByString:@" "];
-        NSString *agentLastName = [arrayWithAgentName lastObject];
+        NSString *lastname = [agentName componentsSeparatedByString:@" "][1];
+        lastname = [agentName stringByAppendingString:lastname];
         
         //
         // 20. Once we have the last name of the agent from the code above, how do we set the view's title to the right
         //     string?
         //
         
-         self.title = [NSString stringWithFormat:@"%@", agentLastName];
+         self.title = [NSString stringWithFormat:@"%@", agentName];
         //
         // 21. We need to set the three labels in our view to the agent's cover name, real name, and access label.
         //
